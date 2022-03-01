@@ -16,31 +16,13 @@ public class GradeEstimation {
         password.sendKeys("3112542My");
         WebElement login = driver.findElement(By.className("btn--primary"));
         login.click();
-
+        driver.findElement(By.cssSelector("label[for='ITX2007-F']")).click();   
         WebElement g = driver.findElement(By.className("js-grade"));
         g.click();
 
-
-
-        //WebElement subjectcode = driver.findElement(By.id("name"));
-        //WebElement grade = driver.findElement(By.id("data-grade"));
-        
-        //subjectcode.sendKeys("ITX2007");
-        //grade.sendKeys("C");
-
-        //Selecting the first checkbox
-driver.findElement(By.cssSelector("label[for='hobbies-checkbox-1']")).click();
-
-//Selecting the second checkbox
-driver.findElement(By.cssSelector("label[for='hobbies-checkbox-2']")).click();
-		
-//Selecting the last check box
-driver.findElement(By.cssSelector("label[for='hobbies-checkbox-3']")).click();
-
-       
-
-        
-
-    
+    //Selecting the second checkbox
+    driver.findElement(By.cssSelector("label[for='hobbies-checkbox-2']")).click();		
+    //Selecting the last check box
+    driver.findElement(By.cssSelector("label[for='hobbies-checkbox-3']")).click();
     }
 }
