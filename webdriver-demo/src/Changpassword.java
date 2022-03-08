@@ -12,8 +12,8 @@ public class Changpassword {
 
         WebElement username = driver.findElement(By.id("Username"));
         WebElement password = driver.findElement(By.id("Password"));
-        username.sendKeys("");
-        password.sendKeys("");
+        username.sendKeys("AU STUDENTID");
+        password.sendKeys("AU PASSWORD");
         WebElement login = driver.findElement(By.className("btn--primary"));
         login.click();
 
