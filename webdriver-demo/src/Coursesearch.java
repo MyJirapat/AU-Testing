@@ -8,18 +8,14 @@ public class Coursesearch {
         System.setProperty("webdriver.chrome.driver","C://Users//Acer//Downloads//chromedriver_win32//chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://auspark.au.edu/class_search");
-
         WebElement username = driver.findElement(By.id("Username"));
         WebElement password = driver.findElement(By.id("Password"));
-        username.sendKeys("6217410");
-        password.sendKeys("3112542My");
+        username.sendKeys("");
+        password.sendKeys("");
         WebElement login = driver.findElement(By.className("btn--primary"));
         login.click();
-
         WebElement logins = driver.findElement(By.className("h-100"));
-        logins.click();
-
-        
+        logins.click();    
         WebElement course = driver.findElement(By.id("data-courses"));
         course.sendKeys("6217410");
 
@@ -28,9 +24,7 @@ public class Coursesearch {
     }
 }*/
 
-
 /*import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,8 +38,8 @@ public class Coursesearch {
 
     WebElement username = driver.findElement(By.id("Username"));
     WebElement password = driver.findElement(By.id("Password"));
-    username.sendKeys("6217410");
-    password.sendKeys("3112542My");
+    username.sendKeys("");
+    password.sendKeys("");
     WebElement login = driver.findElement(By.className("btn--primary"));
     login.click();
 	  	
@@ -79,8 +73,8 @@ public class Coursesearch {
 
         WebElement username = driver.findElement(By.id("Username"));
         WebElement password = driver.findElement(By.id("Password"));
-        username.sendKeys("AU ID");
-        password.sendKeys("AU PASS");
+        username.sendKeys("6217410");
+        password.sendKeys("");
         WebElement login = driver.findElement(By.className("btn--primary"));
         login.click();
 
@@ -89,10 +83,5 @@ public class Coursesearch {
 
         WebElement Subclick = driver.findElement(By.id("js-autocomplete-list"));
         Subclick.click();
-
-        
-
-        
-        
     }
 }

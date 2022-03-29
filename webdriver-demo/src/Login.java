@@ -11,9 +11,10 @@ public class Login {
 
         WebElement username = driver.findElement(By.id("Username"));
         WebElement password = driver.findElement(By.id("Password"));
-        username.sendKeys("AU ID");
-        password.sendKeys("AU PASS");
+        username.sendKeys("6217410");
+        password.sendKeys("");
         WebElement login = driver.findElement(By.className("btn--primary"));
         login.click();
     }
 }
+
